@@ -51,10 +51,10 @@ ul {
 .hero-container {
     padding: 200px 0px;
 }
-.section {
+/* .section {
     width: 1600px;
     margin: 0 auto;
-}
+} */
 
 /* Navigation */
 .header-logo {
@@ -161,6 +161,7 @@ address {
     border-radius: 4px;
     display: block;
     margin: 0 auto;
+    border: 0rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
 }
@@ -202,12 +203,14 @@ address {
 
 /* Styles index.html */
 .hero-section {
+    max-width: 1600px;
     background-color: var(--thirdly-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url(../images/bg-hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 .second-section {
     background-color: var(--background-color)
@@ -441,7 +444,7 @@ margin-right: 30px;
 }
 .contacts-icon {
     margin-right: 10px;
-    fill: rgba(117, 117, 117, 1);
+    fill: currentColor;
 }
 .contacts-icon:hover,
 .contacts-icon:focus {
@@ -547,7 +550,10 @@ margin-right: 30px;
 .clients-soc-link:focus .clients-soc-icon {
     fill: var(--accent-color);
 }
-
+.clients-soc-link:hover,
+.clients-soc-link:focus {
+    border-color: var(--accent-color);
+}
 .clients-soc-icon {
     fill: rgba(175, 177, 184, 1);
 }
@@ -568,7 +574,7 @@ margin-right: 30px;
     content: "";
     width: 270px;
     height: 120px;
-    background-image: url(../images/antenna1.png);
+    background-image: url(../images/antenna1.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
@@ -581,7 +587,7 @@ margin-right: 30px;
     content: "";
     width: 270px;
     height: 120px;
-    background-image: url(../images/diagram1.png);
+    background-image: url(../images/diagram1.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
@@ -594,7 +600,7 @@ margin-right: 30px;
     content: "";
     width: 270px;
     height: 120px;
-    background-image: url(../images/clock1.png);
+    background-image: url(../images/clock1.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
@@ -607,7 +613,7 @@ margin-right: 30px;
     content: "";
     width: 270px;
     height: 120px;
-    background-image: url(../images/astronaut1.png);
+    background-image: url(../images/astronaut1.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
